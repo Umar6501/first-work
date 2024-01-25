@@ -1,0 +1,11 @@
+@use '../base' as *;
+
+@mixin primaryBtn {
+  border: none;
+  padding: 8px 20px;
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+  background-color: $color-second;
+  cursor: pointer;
+}

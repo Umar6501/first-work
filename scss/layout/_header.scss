@@ -1,0 +1,67 @@
+@use "../base" as *;
+@use "../components" as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: transparent;
+  z-index: 101;
+  .container {
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      .Alfacell {
+        color: white;
+        font-size: 18px;
+        font-family: Inter;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .Frame1 {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+        display: flex;
+
+        .AboutUs,
+        .Services,
+        .Clients,
+        .IndustriesServed,
+        .ContactUs {
+          opacity: 0.7;
+          color: white;
+          font-size: 16px;
+          font-family: Inter;
+          font-weight: 500;
+          word-wrap: break-word;
+        }
+      }
+      .Frame7 {
+        width: 132px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background: white;
+        border-radius: 6px;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 6px;
+        display: flex;
+
+        .ContactUs {
+          color: #172129;
+          font-size: 16px;
+          font-family: Inter;
+          font-weight: 500;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+}
