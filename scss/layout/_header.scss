@@ -1,12 +1,20 @@
 @use "../base" as *;
 @use "../components" as *;
 
+header.sticky {
+  transition: 0.3s ease;
+  padding: 0px 0px;
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+}
 .header {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  padding: 10px 0px;
   background: transparent;
+  transition: 0.3s;
   z-index: 101;
   .container {
     .header-wrapper {
@@ -25,41 +33,63 @@
       .Frame1 {
         justify-content: flex-start;
         align-items: center;
-        gap: 16px;
+        gap: 23px;
         display: flex;
 
-        .AboutUs,
-        .Services,
-        .Clients,
-        .IndustriesServed,
-        .ContactUs {
+        a {
+          text-decoration: none;
           opacity: 0.7;
           color: white;
           font-size: 16px;
           font-family: Inter;
           font-weight: 500;
           word-wrap: break-word;
+          padding: 8px;
+          border-radius: 10px;
+          border: 1px solid transparent;
+          transition: 0.3s;
+          &:hover {
+            color: white;
+            border-color: aliceblue;
+            transition: 0.3s;
+          }
         }
       }
-      .Frame7 {
-        width: 132px;
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        background: white;
-        border-radius: 6px;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 6px;
-        display: flex;
 
-        .ContactUs {
-          color: #172129;
-          font-size: 16px;
-          font-family: Inter;
-          font-weight: 500;
-          word-wrap: break-word;
+      .Contact-btn {
+        display: inline-block;
+        border-radius: 9px;
+        background-color: #2d2d3f;
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 17px;
+        padding: 14px;
+        width: 130px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        &:hover {
+          .span {
+            padding-right: 15px;
+            &:after {
+              opacity: 1;
+              right: 378px;
+              color: #ffffff;
+            }
+          }
+        }
+        .span {
+          transition: 0.3s;
+          transform: translateX(-9px);
+          &:after {
+            content: "»";
+            position: absolute;
+            opacity: 0;
+            top: 45px;
+            right: 374px;
+            transition: 0.5s;
+          }
         }
       }
     }

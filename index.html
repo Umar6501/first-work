@@ -9,29 +9,31 @@
 </head>
 
 <body>
-  <div class="header">
+  <header class="header">
     <div class="container">
       <div class="header-wrapper">
         <div class="Alfacell">AlfaCell</div>
         <div class="Frame1">
-          <div class="AboutUs">About us</div>
-          <div class="Services">Services</div>
-          <div class="Clients">Clients</div>
-          <div class="IndustriesServed">Industries Served</div>
-          <div class="ContactUs">Contact Us</div>
+          <a href="#" class="AboutUs">About us</a>
+          <a href="#" class="Services">Services</a>
+          <a href="#" class="Clients">Clients</a>
+          <a href="#" class="IndustriesServed">Industries Served</a>
+          <a href="#" class="ContactUs">Contact Us</a>
         </div>
-        <div class="Frame7">
-          <div class="ContactUs">Contact us</div>
-        </div>
+        <a class="Contact-btn">
+          <span class="span">Contact</span>
+        </a>
       </div>
 
     </div>
 
-  </div>
+  </header>
   <main>
     <section class="hero-section">
       <div class="hero-bg">
-        <img class="Image7" src="./img//heroiImg.png" />
+        <video class="gif" autoplay loop muted>
+          <source id="gif1" src="./image/1237828_Backgrounds_Abstract_Pattern_1920x1080.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="container">
         <div class="hero-wrapper">
@@ -45,8 +47,6 @@
     </section>
     <section class="category-section">
       <div class="container">
-
-
         <div class="category-info">
           <h1 class="service">Our services</h1>
           <p class="elevate">Elevate Your Business with Our <br />Comprehensive
@@ -55,42 +55,42 @@
         <div class="category-cards">
           <!-- 1 -->
           <div class="category-item i-1">
-            <img class="card-img" src="https://via.placeholder.com/223x318" />
+            <img class="card-img" src="./image/Rectangle 19.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
           <!-- 2 -->
           <div class="category-item i-1">
-            <img class="card-img" src="https://via.placeholder.com/223x318" />
+            <img class="card-img" src="./image/Rectangle 19-1.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
           <!-- 3 -->
           <div class="category-item i-1">
-            <img class="card-img" src="https://via.placeholder.com/223x318" />
+            <img class="card-img" src="./image/Rectangle 19-2.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
           <!-- 4 -->
           <div class="category-item i-1">
-            <img class="card-img" src="https://via.placeholder.com/223x318" />
+            <img class="card-img" src="./image/Rectangle 19-3.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
           <!-- 5 -->
           <div class="category-item i-2">
-            <img class="card-img" src="https://via.placeholder.com/223x318" />
+            <img class="card-img" src="./image/Rectangle 19-4.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
           <!-- 6 -->
           <div class="category-item i-2">
-            <img class="card-img" src="https://via.placeholder.com/223x318" />
+            <img class="card-img" src="./image/Rectangle 19-5.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
           <!-- 7 -->
           <div class="category-item i-2">
-            <img class="card-img" src="https://via.placeholder.com/223x318" />
+            <img class="card-img" src="./image/Rectangle 19-6.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
           <!-- 8 -->
           <div class="category-item i-2">
-            <img class="card-img" src="https://via.placeholder.com/223x318" />
+            <img class="card-img" src="./image/Rectangle 19-7.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
         </div>
@@ -196,7 +196,9 @@
       </div>
     </section>
     <section class="contact-section">
-      <img src="./img/contactImg.png" alt="contactImg" class="contactImg">
+      <video class="contact-gif" autoplay loop muted>
+        <source id="gif1" src="./image/1237828_Backgrounds_Abstract_Pattern_1920x1080.mp4" type="video/mp4">
+      </video>
       <div class="container">
         <div class="contact-wrapper">
           <div class="contact-info">
@@ -234,7 +236,6 @@
         </div>
       </div>
     </section>
-
   </main>
   <footer class="footer">
     <div class="container">
@@ -274,10 +275,14 @@
       </div>
     </div>
   </footer>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="script.js"></script>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 27);
+      console.log(header.classList);
+    });
+  </script>
+
 </body>
 
 </html>

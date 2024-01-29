@@ -6,26 +6,31 @@
 
   margin-top: -141px;
   margin-bottom: -144px;
-  .contactImg {
+  .contact-gif {
     width: 100%;
     position: absolute;
     right: 0;
     left: 0;
+    z-index: -1;
+    #gif1 {
+      width: 100%;
+    }
   }
   .container {
     .contact-wrapper {
-      display: flex;
-      margin: 200px auto 200px auto;
-      transform: scale(1);
-      padding: 30px;
       width: 35%;
-      background: rgba(102, 123, 141, 0.053);
-      border-radius: 16px;
-      backdrop-filter: blur(12px);
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 26px;
+      margin: 200px auto 200px auto;
+      padding: 30px;
+      background: #17212915;
+      transform: scale(1);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      pointer-events: none;
       .contact-info {
         flex-direction: column;
         justify-content: flex-start;
