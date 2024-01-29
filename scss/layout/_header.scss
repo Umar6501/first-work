@@ -2,16 +2,19 @@
 @use "../components" as *;
 
 header.sticky {
+  height: 50px;
   transition: 0.3s ease;
-  padding: 0px 0px;
   backdrop-filter: blur(10px);
-  pointer-events: none;
 }
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  height: 100px;
   padding: 10px 0px;
   background: transparent;
   transition: 0.3s;
@@ -43,13 +46,11 @@ header.sticky {
           font-size: 16px;
           font-family: Inter;
           font-weight: 500;
-          word-wrap: break-word;
-          padding: 8px;
+          padding: 8px 8px;
           border-radius: 10px;
           border: 1px solid transparent;
           transition: 0.3s;
           &:hover {
-            color: white;
             border-color: aliceblue;
             transition: 0.3s;
           }
@@ -64,7 +65,7 @@ header.sticky {
         color: #ffffff;
         text-align: center;
         font-size: 17px;
-        padding: 14px;
+        padding: 8px 13px;
         width: 130px;
         transition: all 0.5s;
         cursor: pointer;
@@ -80,14 +81,15 @@ header.sticky {
           }
         }
         .span {
+          font-family: sans-serif;
           transition: 0.3s;
           transform: translateX(-9px);
           &:after {
             content: "»";
             position: absolute;
             opacity: 0;
-            top: 45px;
-            right: 374px;
+            top: 30px;
+            right: 372px;
             transition: 0.5s;
           }
         }

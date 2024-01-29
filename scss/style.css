@@ -7,18 +7,21 @@
 }
 
 header.sticky {
+  height: 50px;
   transition: 0.3s ease;
-  padding: 0px 0px;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  pointer-events: none;
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  height: 100px;
   padding: 10px 0px;
   background: transparent;
   transition: 0.3s;
@@ -50,14 +53,12 @@ header.sticky {
   font-size: 16px;
   font-family: Inter;
   font-weight: 500;
-  word-wrap: break-word;
-  padding: 8px;
+  padding: 8px 8px;
   border-radius: 10px;
   border: 1px solid transparent;
   transition: 0.3s;
 }
 .header .container .header-wrapper .Frame1 a:hover {
-  color: white;
   border-color: aliceblue;
   transition: 0.3s;
 }
@@ -69,7 +70,7 @@ header.sticky {
   color: #ffffff;
   text-align: center;
   font-size: 17px;
-  padding: 14px;
+  padding: 8px 13px;
   width: 130px;
   transition: all 0.5s;
   cursor: pointer;
@@ -84,6 +85,7 @@ header.sticky {
   color: #ffffff;
 }
 .header .container .header-wrapper .Contact-btn .span {
+  font-family: sans-serif;
   transition: 0.3s;
   transform: translateX(-9px);
 }
@@ -91,8 +93,8 @@ header.sticky {
   content: "»";
   position: absolute;
   opacity: 0;
-  top: 45px;
-  right: 374px;
+  top: 30px;
+  right: 372px;
   transition: 0.5s;
 }
 
@@ -391,7 +393,6 @@ header.sticky {
   border-radius: 16px;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  pointer-events: none;
 }
 .contact-section .container .contact-wrapper .contact-info {
   flex-direction: column;
@@ -442,7 +443,6 @@ header.sticky {
   font-size: 18px;
   width: 350px;
   padding: 15px 20px;
-  outline: none;
   border: 1.5px #a6a6a6 solid;
   border-radius: 10px;
 }

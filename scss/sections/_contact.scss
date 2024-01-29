@@ -30,7 +30,6 @@
       transform: scale(1);
       border-radius: 16px;
       backdrop-filter: blur(10px);
-      pointer-events: none;
       .contact-info {
         flex-direction: column;
         justify-content: flex-start;
@@ -82,7 +81,6 @@
             font-size: 18px;
             width: 350px;
             padding: 15px 20px;
-            outline: none;
             border: 1.5px #a6a6a6 solid;
             border-radius: 10px;
           }
