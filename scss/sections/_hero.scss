@@ -56,3 +56,22 @@
     }
   }
 }
+
+@media (max-width: 1499px) {
+  .hero-section {
+    margin-bottom: -22px;
+    .hero-bg {
+      .gif {
+        width: 100%;
+      }
+    }
+    // .container {
+    //   .hero-wrapper {
+    //     .hero-h1 {
+    //     }
+    //     .hero-p {
+    //     }
+    //   }
+    // }
+  }
+}

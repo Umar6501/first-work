@@ -88,7 +88,7 @@ header.sticky {
             content: "»";
             position: absolute;
             opacity: 0;
-            top: 30px;
+            top: 40px;
             right: 372px;
             transition: 0.5s;
           }
@@ -97,3 +97,26 @@ header.sticky {
     }
   }
 }
+
+// @media (max-width: 1498px) {
+//   .header.sticky {
+//   }
+//   .header {
+//     .container {
+//       .header-wrapper {
+//         .Alfacell {
+//         }
+//         .Frame1 {
+//           a {
+//           }
+//         }
+//         .Contact-btn {
+//           .span {
+//             &:after {
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
