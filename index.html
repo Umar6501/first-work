@@ -32,8 +32,10 @@
   <main>
     <section class="hero-section">
       <div class="hero-bg">
-        <video class="gif" autoplay loop muted>
+        <video шв="myVideo" class="gif" autoplay loop muted loading="lazy">
           <source id="gif1" src="./image/1237828_Backgrounds_Abstract_Pattern_1920x1080.mp4" type="video/mp4">
+          <source id="gif1" src="./image/1237828_Backgrounds_Abstract_Pattern_1920x1080.mp4" type="video/webm">
+
         </video>
       </div>
       <div class="container">
@@ -472,7 +474,9 @@
       header.classList.toggle("sticky", window.scrollY > 27);
     });
   </script>
-  <script src="./js/swiper.min.js"></script>
+  <script src="./js/swiper.min.js">
+
+  </script>
   <script>
     var swiper = new Swiper('.swiper-container', {
       effect: 'coverflow',
@@ -494,6 +498,26 @@
       navigation: { // исправлена ошибка в названии объекта
         nextEl: '.swiper-button-next', // исправлено название свойства
         prevEl: '.swiper-button-prev', // исправлено название свойства
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var video = document.getElementById('myVideo');
+
+      // Асинхронная загрузка видео
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) {
+            video.load();
+            observer.disconnect();
+          }
+        }, { threshold: 0.5 });
+
+        observer.observe(video);
+      } else {
+        // Загрузка видео без использования IntersectionObserver для старых браузеров
+        video.load();
       }
     });
   </script>
