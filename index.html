@@ -32,7 +32,7 @@
   <main>
     <section class="hero-section">
       <div class="hero-bg">
-        <video шв="myVideo" class="gif" autoplay loop muted loading="lazy">
+        <video id="myVideo" class="gif" autoplay loop muted loading="lazy">
           <source id="gif1" src="./image/1237828_Backgrounds_Abstract_Pattern_1920x1080.mp4" type="video/mp4">
           <source id="gif1" src="./image/1237828_Backgrounds_Abstract_Pattern_1920x1080.mp4" type="video/webm">
 
@@ -516,7 +516,6 @@
 
         observer.observe(video);
       } else {
-        // Загрузка видео без использования IntersectionObserver для старых браузеров
         video.load();
       }
     });
