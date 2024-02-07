@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lesson 33</title>
-  <link rel="stylesheet" href="./js/swiper.min.css">
+  <link rel="stylesheet" href="./scss/swiper.min.css">
   <link rel="stylesheet" href="./scss/style.css" />
 </head>
 
@@ -14,23 +14,80 @@
     <div class="container">
       <div class="header-wrapper">
         <div class="Alfacell">AlfaCell</div>
-        <div class="Frame1">
+        <div class="nav-links">
           <a href="#" class="AboutUs">About us</a>
           <a href="#" class="Services">Services</a>
           <a href="#" class="Clients">Clients</a>
           <a href="#" class="IndustriesServed">Industries Served</a>
-          <a href="#" class="ContactUs">Contact Us</a>
+
+
         </div>
-        <a class="Contact-btn">
-          <span class="span">Contact</span>
+        <a class="Contact-btn1">
+          <span class="span">Contact Us</span>
         </a>
+
+        <button id="menuBtn">
+          <span class="span" id="span1"></span>
+          <span class="span" id="span2"></span>
+          <span class="span" id="span3"></span>
+        </button>
+        <span class="menu-bg"></span>
+        <div class="menu-links">
+          <a href="#" class="AboutUs">About us</a>
+          <a href="#" class="Services">Services</a>
+          <a href="#" class="Clients">Clients</a>
+          <a href="#" class="IndustriesServed">Industries Served</a>
+          <div class="social-media">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
+              style="fill: rgba(255, 255, 255, 1);">
+              <path
+                d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z">
+              </path>
+              <circle cx="16.806" cy="7.207" r="1.078"></circle>
+              <path
+                d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z">
+              </path>
+            </svg>
+            <!-- /// -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
+              style="fill: rgba(255, 255, 255, 1);">
+              <path
+                d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z">
+              </path>
+            </svg>
+            <!-- /// -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
+              style="fill: rgba(255, 255, 255, 1);">
+              <path
+                d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z">
+              </path>
+            </svg>
+            <!-- /// -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34"
+              style="fill: rgba(255, 255, 255, 1);">
+              <path
+                d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+              </path>
+            </svg>
+          </div>
+          <a class="Contact-btn">
+            <span class="span">Contact</span>
+          </a>
+        </div>
+
       </div>
 
     </div>
 
   </header>
   <main>
-    <section class="hero-section">
+    <div class="typewriter">
+      <div class="slide"><i></i></div>
+      <div class="paper"></div>
+      <div class="keyboard"></div>
+    </div>
+    <h1>Hali tayyor emas!!</h1>
+    <!-- <section class="hero-section">
       <div class="hero-bg">
         <video id="myVideo" class="gif" autoplay loop muted loading="lazy">
           <source id="gif1" src="./image/1237828_Backgrounds_Abstract_Pattern_1920x1080.mp4" type="video/mp4">
@@ -45,8 +102,10 @@
 
         </div>
       </div>
-    </section>
-    <section class="category-section">
+    </section> -->
+
+
+    <!-- <section class="category-section">
       <div class="container">
         <div class="category-info">
           <h1 class="service">Our services</h1>
@@ -54,297 +113,275 @@
             IT Solutions</p>
         </div>
         <div class="category-cards">
-          <!-- 1 -->
           <div class="category-item i-1">
             <img class="card-img" src="./image/Rectangle 19.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
-          <!-- 2 -->
           <div class="category-item i-1">
             <img class="card-img" src="./image/Rectangle 19-1.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
-          <!-- 3 -->
           <div class="category-item i-1">
             <img class="card-img" src="./image/Rectangle 19-2.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
-          <!-- 4 -->
           <div class="category-item i-1">
             <img class="card-img" src="./image/Rectangle 19-3.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
-          <!-- 5 -->
           <div class="category-item i-2">
             <img class="card-img" src="./image/Rectangle 19-4.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
-          <!-- 6 -->
           <div class="category-item i-2">
             <img class="card-img" src="./image/Rectangle 19-5.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
-          <!-- 7 -->
           <div class="category-item i-2">
             <img class="card-img" src="./image/Rectangle 19-6.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
-          <!-- 8 -->
+        
           <div class="category-item i-2">
             <img class="card-img" src="./image/Rectangle 19-7.png" />
             <h4 class="card-text">Web Development</h4>
           </div>
         </div>
       </div>
-    </section>
-    <div class="swiper-container">
-      <a class="swiper-button-next"></a>
-      <a class="swiper-button-prev"></a>
-      <!-- <div class="swiper-scrollbar"></div> -->
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <section class="process-section">
-            <div class="container">
-              <div class="process-wrapper">
-                <div class="process-1">
-                  <div class="process-11">
-                    <div class="webFront">Web/Front End Development</div>
-                    <div class="theProcess">
-                      The process of creating the visual and interactive components of a website or
-                      web application that
-                      users
-                      interact with directly. Frontend developers work on the client side, focusing on
-                      the presentation
-                      layer
-                      of
-                      a website to ensure that it is visually appealing, responsive, and functions
-                      well across various
-                      devices
-                      and browsers
-                    </div>
-                    <div class="skills">Skill Sets:</div>
-                    <div class="htmlcss">HTML, CSS, JavaScript (React.js/Angular/Vue.js)</div>
-                    <buttom class="contactUs">
-                      <p class="contact-p">Contact us</p>
-                      <div class="arrowRightSvg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-                          <path d="M4.58301 11.6855H17.4163" stroke="#172129" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M11 5.26904L17.4167 11.6857L11 18.1024" stroke="#172129" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                      </div>
-                    </buttom>
+    </section> -->
+    <!-- <section class="process-section">
+      <div class="swiper-container">
+        <a class="swiper-button-next"></a>
+        <a class="swiper-button-prev"></a>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
 
-
+            <div class="process-wrapper">
+              <div class="process-1">
+                <div class="process-11">
+                  <div class="webFront">Web/Front End Development</div>
+                  <div class="theProcess">
+                    The process of creating the visual and interactive components of a website or
+                    web application that
+                    users
+                    interact with directly. Frontend developers work on the client side, focusing on
+                    the presentation
+                    layer
+                    of
+                    a website to ensure that it is visually appealing, responsive, and functions
+                    well across various
+                    devices
+                    and browsers
                   </div>
+                  <div class="skills">Skill Sets:</div>
+                  <div class="htmlcss">HTML, CSS, JavaScript (React.js/Angular/Vue.js)</div>
+                  <buttom class="contactUs">
+                    <p class="contact-p">Contact us</p>
+                    <div class="arrowRightSvg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                        <path d="M4.58301 11.6855H17.4163" stroke="#172129" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M11 5.26904L17.4167 11.6857L11 18.1024" stroke="#172129" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </buttom>
 
-                  <img class="Rectangle13" src="https://via.placeholder.com/510x392" />
+
                 </div>
 
-                <div class="process-2">
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
+                <img class="Rectangle13" src="https://via.placeholder.com/510x392" />
+              </div>
+
+              <div class="process-2">
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
                 </div>
               </div>
             </div>
-          </section>
 
+
+
+          </div>
+          <div class="swiper-slide">
+            <div class="process-wrapper">
+              <div class="process-1">
+                <div class="process-11">
+                  <div class="webFront">Web/Front End Development</div>
+                  <div class="theProcess">
+                    The process of creating the visual and interactive components of a website or
+                    web application that
+                    users
+                    interact with directly. Frontend developers work on the client side, focusing on
+                    the presentation
+                    layer
+                    of
+                    a website to ensure that it is visually appealing, responsive, and functions
+                    well across various
+                    devices
+                    and browsers
+                  </div>
+                  <div class="skills">Skill Sets:</div>
+                  <div class="htmlcss">HTML, CSS, JavaScript (React.js/Angular/Vue.js)</div>
+                  <buttom class="contactUs">
+                    <p class="contact-p">Contact us</p>
+                    <div class="arrowRightSvg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                        <path d="M4.58301 11.6855H17.4163" stroke="#172129" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M11 5.26904L17.4167 11.6857L11 18.1024" stroke="#172129" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </buttom>
+
+
+                </div>
+
+                <img class="Rectangle13" src="https://via.placeholder.com/510x392" />
+              </div>
+
+              <div class="process-2">
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="process-wrapper">
+              <div class="process-1">
+                <div class="process-11">
+                  <div class="webFront">Web/Front End Development</div>
+                  <div class="theProcess">
+                    The process of creating the visual and interactive components of a website or
+                    web application that
+                    users
+                    interact with directly. Frontend developers work on the client side, focusing on
+                    the presentation
+                    layer
+                    of
+                    a website to ensure that it is visually appealing, responsive, and functions
+                    well across various
+                    devices
+                    and browsers
+                  </div>
+                  <div class="skills">Skill Sets:</div>
+                  <div class="htmlcss">HTML, CSS, JavaScript (React.js/Angular/Vue.js)</div>
+                  <buttom class="contactUs">
+                    <p class="contact-p">Contact us</p>
+                    <div class="arrowRightSvg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                        <path d="M4.58301 11.6855H17.4163" stroke="#172129" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M11 5.26904L17.4167 11.6857L11 18.1024" stroke="#172129" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </buttom>
+
+
+                </div>
+
+                <img class="Rectangle13" src="https://via.placeholder.com/510x392" />
+              </div>
+
+              <div class="process-2">
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="process-wrapper">
+              <div class="process-1">
+                <div class="process-11">
+                  <div class="webFront">Web/Front End Development</div>
+                  <div class="theProcess">
+                    The process of creating the visual and interactive components of a website or
+                    web application that
+                    users
+                    interact with directly. Frontend developers work on the client side, focusing on
+                    the presentation
+                    layer
+                    of
+                    a website to ensure that it is visually appealing, responsive, and functions
+                    well across various
+                    devices
+                    and browsers
+                  </div>
+                  <div class="skills">Skill Sets:</div>
+                  <div class="htmlcss">HTML, CSS, JavaScript (React.js/Angular/Vue.js)</div>
+                  <buttom class="contactUs">
+                    <p class="contact-p">Contact us</p>
+                    <div class="arrowRightSvg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                        <path d="M4.58301 11.6855H17.4163" stroke="#172129" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M11 5.26904L17.4167 11.6857L11 18.1024" stroke="#172129" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </buttom>
+
+
+                </div>
+
+                <img class="Rectangle13" src="https://via.placeholder.com/510x392" />
+              </div>
+
+              <div class="process-2">
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+                <div class="process-item">
+                  <img class="process-img" src="https://via.placeholder.com/266x217" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <section class="process-section">
-            <div class="container">
-              <div class="process-wrapper">
-                <div class="process-1">
-                  <div class="process-11">
-                    <div class="webFront">Web/Front End Development</div>
-                    <div class="theProcess">
-                      The process of creating the visual and interactive components of a website or
-                      web application that
-                      users
-                      interact with directly. Frontend developers work on the client side, focusing on
-                      the presentation
-                      layer
-                      of
-                      a website to ensure that it is visually appealing, responsive, and functions
-                      well across various
-                      devices
-                      and browsers
-                    </div>
-                    <div class="skills">Skill Sets:</div>
-                    <div class="htmlcss">HTML, CSS, JavaScript (React.js/Angular/Vue.js)</div>
-                    <buttom class="contactUs">
-                      <p class="contact-p">Contact us</p>
-                      <div class="arrowRightSvg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-                          <path d="M4.58301 11.6855H17.4163" stroke="#172129" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M11 5.26904L17.4167 11.6857L11 18.1024" stroke="#172129" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                      </div>
-                    </buttom>
 
+        <div class="swiper-pagination">
 
-                  </div>
-
-                  <img class="Rectangle13" src="https://via.placeholder.com/510x392" />
-                </div>
-
-                <div class="process-2">
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="swiper-slide">
-          <section class="process-section">
-            <div class="container">
-              <div class="process-wrapper">
-                <div class="process-1">
-                  <div class="process-11">
-                    <div class="webFront">Web/Front End Development</div>
-                    <div class="theProcess">
-                      The process of creating the visual and interactive components of a website or
-                      web application that
-                      users
-                      interact with directly. Frontend developers work on the client side, focusing on
-                      the presentation
-                      layer
-                      of
-                      a website to ensure that it is visually appealing, responsive, and functions
-                      well across various
-                      devices
-                      and browsers
-                    </div>
-                    <div class="skills">Skill Sets:</div>
-                    <div class="htmlcss">HTML, CSS, JavaScript (React.js/Angular/Vue.js)</div>
-                    <buttom class="contactUs">
-                      <p class="contact-p">Contact us</p>
-                      <div class="arrowRightSvg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-                          <path d="M4.58301 11.6855H17.4163" stroke="#172129" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M11 5.26904L17.4167 11.6857L11 18.1024" stroke="#172129" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                      </div>
-                    </buttom>
-
-
-                  </div>
-
-                  <img class="Rectangle13" src="https://via.placeholder.com/510x392" />
-                </div>
-
-                <div class="process-2">
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="swiper-slide">
-          <section class="process-section">
-            <div class="container">
-              <div class="process-wrapper">
-                <div class="process-1">
-                  <div class="process-11">
-                    <div class="webFront">Web/Front End Development</div>
-                    <div class="theProcess">
-                      The process of creating the visual and interactive components of a website or
-                      web application that
-                      users
-                      interact with directly. Frontend developers work on the client side, focusing on
-                      the presentation
-                      layer
-                      of
-                      a website to ensure that it is visually appealing, responsive, and functions
-                      well across various
-                      devices
-                      and browsers
-                    </div>
-                    <div class="skills">Skill Sets:</div>
-                    <div class="htmlcss">HTML, CSS, JavaScript (React.js/Angular/Vue.js)</div>
-                    <buttom class="contactUs">
-                      <p class="contact-p">Contact us</p>
-                      <div class="arrowRightSvg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-                          <path d="M4.58301 11.6855H17.4163" stroke="#172129" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                          <path d="M11 5.26904L17.4167 11.6857L11 18.1024" stroke="#172129" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                      </div>
-                    </buttom>
-
-
-                  </div>
-
-                  <img class="Rectangle13" src="https://via.placeholder.com/510x392" />
-                </div>
-
-                <div class="process-2">
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                  <div class="process-item">
-                    <img class="process-img" src="https://via.placeholder.com/266x217" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </div>
       </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination">
-
-      </div>
-    </div>
-
-
-
-    <section class="about-section">
+    </section> -->
+    <!-- <section class="about-section">
       <div class="container">
         <div class="about-wrapper">
           <div class="about-info">
@@ -388,8 +425,8 @@
 
         </div>
       </div>
-    </section>
-    <section class="contact-section">
+    </section> -->
+    <!-- <section class="contact-section">
       <video class="contact-gif" autoplay loop muted>
         <source id="gif1" src="./image/1237828_Backgrounds_Abstract_Pattern_1920x1080.mp4" type="video/mp4">
       </video>
@@ -428,9 +465,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
 
@@ -467,40 +504,38 @@
 
       </div>
     </div>
-  </footer>
-  <script type="text/javascript">
-    window.addEventListener("scroll", function () {
-      var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 27);
-    });
-  </script>
-  <script src="./js/swiper.min.js">
-
-  </script>
+  </footer> -->
+  <script src="./js/main.js"></script>
+  <!-- slider js -->
+  <script src="./js/swiper.min.js"></script>
+  <!-- slider js code -->
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
+    var swiper = new Swiper(".swiper-container", {
+      effect: "coverflow",
       grabCursor: false,
       centeredSlides: true,
-      slidesPerView: 'auto',
+      slidesPerView: "auto",
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
         depth: 10,
 
-        modifier: 0,
+        modifier: 100,
         slideShadows: true,
       },
       pagination: {
-        el: '.swiper-pagination',
+        el: ".swiper-pagination",
         clickable: true,
       },
-      navigation: { // исправлена ошибка в названии объекта
-        nextEl: '.swiper-button-next', // исправлено название свойства
-        prevEl: '.swiper-button-prev', // исправлено название свойства
-      }
+      navigation: {
+        // исправлена ошибка в названии объекта
+        nextEl: ".swiper-button-next", // исправлено название свойства
+        prevEl: ".swiper-button-prev", // исправлено название свойства
+      },
     });
+
   </script>
+  <!-- hero video js code -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var video = document.getElementById('myVideo');

@@ -1,153 +1,143 @@
 .process-section {
-  width: 100%;
-  padding-left: 165px;
-  padding-right: 165px;
-  padding-top: 86px;
-  padding-bottom: 86px;
-  background: #0a141c;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 36px;
-  display: inline-flex;
-  .container {
-    .process-wrapper {
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      background: #141e26;
-      border-radius: 36px;
-
-      .process-1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 58px;
-
-        .process-11 {
-          width: 50%;
+  background: #000;
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        .process-wrapper {
+          padding: 30px;
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: flex-start;
-          gap: 26px;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+          background: #141e26;
 
-          .webFront {
-            width: 540px;
-            color: white;
-            font-size: 24px;
-            font-family: Inter;
-            font-weight: 600;
-            word-wrap: break-word;
-          }
-
-          .theProcess {
-            width: 540px;
-            color: #a6a6a6;
-            font-size: 16px;
-            font-family: Inter;
-            font-weight: 400;
-            word-wrap: break-word;
-          }
-
-          .skills {
-            margin-bottom: -20px;
-            width: 540px;
-            color: white;
-            font-size: 12px;
-            font-family: Inter;
-            font-weight: 400;
-            word-wrap: break-word;
-          }
-
-          .htmlcss {
-            width: 540px;
-            color: #a6a6a6;
-            font-size: 16px;
-            font-family: Inter;
-            font-weight: 400;
-            word-wrap: break-word;
-          }
-          .contactUs {
+          .process-1 {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            padding: 10px 15px;
-            border-radius: 10px;
-            background: white;
-            .contact-p {
-              color: #172129;
-              font-size: 16px;
-              font-family: Inter;
-              font-weight: 500;
-              word-wrap: break-word;
-            }
+            gap: 58px;
 
-            .arrowRightSvg {
-              width: 22px;
-              height: 22px;
-              position: relative;
+            .process-11 {
+              width: 50%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              gap: 26px;
 
-              .Vector {
-                width: 12.83px;
-                height: 0px;
-                left: 4.58px;
-                top: 11px;
-                position: absolute;
-                border: 2px #172129 solid;
+              .webFront {
+                width: 540px;
+                color: white;
+                font-size: 24px;
+                font-family: Inter;
+                font-weight: 600;
+                word-wrap: break-word;
+              }
 
-                &:last-child {
-                  width: 6.42px;
-                  height: 12.83px;
-                  left: 11px;
-                  top: 4.58px;
-                  position: absolute;
-                  border: 2px #172129 solid;
+              .theProcess {
+                width: 540px;
+                color: #a6a6a6;
+                font-size: 16px;
+                font-family: Inter;
+                font-weight: 400;
+                word-wrap: break-word;
+              }
+
+              .skills {
+                margin-bottom: -20px;
+                width: 540px;
+                color: white;
+                font-size: 12px;
+                font-family: Inter;
+                font-weight: 400;
+                word-wrap: break-word;
+              }
+
+              .htmlcss {
+                width: 540px;
+                color: #a6a6a6;
+                font-size: 16px;
+                font-family: Inter;
+                font-weight: 400;
+                word-wrap: break-word;
+              }
+              .contactUs {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 15px;
+                border-radius: 10px;
+                background: white;
+                .contact-p {
+                  color: #172129;
+                  font-size: 16px;
+                  font-family: Inter;
+                  font-weight: 500;
+                  word-wrap: break-word;
+                }
+
+                .arrowRightSvg {
+                  width: 22px;
+                  height: 22px;
+                  position: relative;
+
+                  .Vector {
+                    width: 12.83px;
+                    height: 0px;
+                    left: 4.58px;
+                    top: 11px;
+                    position: absolute;
+                    border: 2px #172129 solid;
+
+                    &:last-child {
+                      width: 6.42px;
+                      height: 12.83px;
+                      left: 11px;
+                      top: 4.58px;
+                      position: absolute;
+                      border: 2px #172129 solid;
+                    }
+                  }
                 }
               }
             }
+            .Rectangle13 {
+              width: 50%;
+              display: flex;
+              justify-content: end;
+              height: 392px;
+              border-radius: 12px;
+            }
           }
-        }
-        .Rectangle13 {
-          width: 50%;
-          display: flex;
-          justify-content: end;
-          height: 392px;
-          border-radius: 12px;
-        }
-      }
 
-      .process-2 {
-        height: 216.63px;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 16px;
-        display: inline-flex;
-
-        .process-item {
-          width: 266px;
-          height: 216.63px;
-          justify-content: center;
-          align-items: center;
-          display: flex;
-
-          .process-img {
-            width: 266px;
+          .process-2 {
             height: 216.63px;
-            border-radius: 12px;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 16px;
+            display: inline-flex;
+
+            .process-item {
+              width: 266px;
+              height: 216.63px;
+              justify-content: center;
+              align-items: center;
+              display: flex;
+
+              .process-img {
+                width: 266px;
+                height: 216.63px;
+                border-radius: 12px;
+              }
+            }
           }
         }
       }
     }
   }
-}
-.swiper-container {
-  width: 1340px;
 }
 
 .swiper-slide {

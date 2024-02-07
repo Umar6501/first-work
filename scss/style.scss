@@ -6,3 +6,7 @@
 @use "./utilities" as *;
 @use "./vendors" as *;
 @use "./sections" as *;
+
+body {
+  background: #000000ac;
+}
