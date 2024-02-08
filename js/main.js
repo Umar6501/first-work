@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var headerWrapper = document.querySelector(".menu-bg");
 
     if (menuBtn) {
+      document.body.style.overflow = "auto";
+
       span1.style.transform = "rotate(0deg) translateY(0px) translateX(0px)";
       span2.style.transform = "translateX(0px)";
       span2.style.backgroundColor = "white";
@@ -66,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
       navLinks.style.transform = "translate(100%, -50%)";
       headerWrapper.style.transform = "translateX(100%)";
     } else {
+      document.body.style.overflow = "hidden";
       span1.style.transform = "rotate(45deg) translateY(5px) translateX(5px)";
       span2.style.transform = "translateX(3px)";
       span2.style.backgroundColor = "transparent";
