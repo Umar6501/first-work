@@ -180,6 +180,31 @@ header.sticky {
   }
 }
 
+@media (min-width: 2531px) {
+  .header {
+    transform: scale(2);
+    top: 30px;
+    .container {
+      .header-wrapper {
+        justify-content: center;
+        gap: 180px;
+      }
+    }
+  }
+}
+@media (min-width: 1891px) {
+  .header {
+    transform: scale(2);
+    top: 30px;
+    .container {
+      .header-wrapper {
+        justify-content: center;
+        gap: 120px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1100px) {
   .header {
     .container {
@@ -187,10 +212,17 @@ header.sticky {
     }
   }
 }
-@media (max-width: 1008px) {
+@media (max-width: 1110px) {
   .header {
     .container {
-      width: 982px;
+      width: 1000px;
+    }
+  }
+}
+@media (max-width: 1010px) {
+  .header {
+    .container {
+      width: 992px;
     }
   }
 }
